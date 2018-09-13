@@ -1,0 +1,5 @@
+FILE* fp = fopen("filename", "w");
+
+fprinf(fp, "write this to the file");
+
+fclose(fp);
