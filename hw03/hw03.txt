@@ -1,0 +1,49 @@
+﻿Homework 03
+Jerred Shifflett
+ID: 03062727
+1.
+int min =0;
+for(int i=0; i<10; ++i) {
+int* value = NULL;
+scanf("%d", &value);
+if(i=0) min = value;
+else if(value<min) min = value;
+} // end of loop over input
+printf("The smallest of the 10 values you entered was %d\n", min);
+*************************************************************************************************************
+*************************************************************************************************************
+2.
+int* pointerToMax(int a, int b) {
+      const  int* ptrA = &a;
+      const int* ptrB =&b;
+     if(a>b) return prtA;
+     else return ptrB; 
+}
+*************************************************************************************************************
+*************************************************************************************************************
+3.
+Int a = 0;
+int* ptr = &a; 
+scanf("%d", ptr);
+ 
+printf("You entered %d", &ptr) 
+*************************************************************************************************************
+*************************************************************************************************************
+4.
+(a) int* a; pointer to int a
+ (b) const int b;  constant interger named b 
+ (c) const int* c; constant pointer to int c
+ (d) int* const d; pointer to constant int named d
+ (e) const int* const e;  both ptr and var are constant
+*************************************************************************************************************
+*************************************************************************************************************
+5. What is the difference between the * and & operators?
+& refers  the pointer to the variable
+* refers to dereferenced pointer, the data it points to 
+*************************************************************************************************************
+*************************************************************************************************************
+6.
+ What is the difference between const int* a and int* const b? 
+Const int* a creates a constant pointer to a changeable variable(a)
+int* const b create a changeable pointer to a constant variable.
+*************************************************************************************************************
