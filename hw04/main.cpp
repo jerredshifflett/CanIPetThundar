@@ -5,4 +5,5 @@ int main()
 {
 readPPM();
 return 0;
-}
+}// end of main
+  
