@@ -3,9 +3,10 @@
 
 void readPPM()
 {
-char string[81];
-int* width;
-int* height;
+char string[3];
+string[2] = '\0';
+int width;
+int height;
 int* maxPixel;
 int* bytes;
 FILE* fpPPM = fopen("test.ppm", "rb");
@@ -29,20 +30,12 @@ printf("%d Max Pixels\n", maxPixel);//test
 
 //read binary pixel data
 //int size = width * height * 3;
-printf("%d size of this thing", (*width) * (*height) * 3 );
+
+printf("%d size of this thing", (width) * (height) * 3 );
 
 
-
-//fread(array, sizeof(int), 128, fpPPM);
-//printf("%c",array);
-//printf("%d  das bytes", nbytes);
-//printf(" bytes\n",&bytes);
 fclose(fpPPM);
 
-//\nbinaryjunk
-
-//read imagePixels
-//int size = *height * *width * 3;
 
 
 
